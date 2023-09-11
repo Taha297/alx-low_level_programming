@@ -1,41 +1,20 @@
 #include <stdio.h>
-<<<<<<< HEAD
 
 /**
- * main - Prints the alphabet in lowercase, and then in uppercase.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
-	for (letter = 'A'; letter <= 'Z'; letter++)
-		putchar(letter);
-
-=======
-#include <stdlib.h>
-#include <time.h>
-
-/**
- * main - Entry point
+ * main - Prints the alphabet.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char low;
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-	for (low = 'A'; low <= 'Z'; low++)
-		putchar(low);
->>>>>>> 419bf1b17aae4c6741137a137b037c98cff2e51c
+	for (i = 0; i < 52; i++)
+	{
+		putchar(alp[i]);
+	}
 	putchar('\n');
-
 	return (0);
 }
+
